@@ -37,7 +37,14 @@ export function initTimeOutPage(params){
             }
         }
 
-        @media (max-width: 414px) {
+        @media (min-width: 390px) {
+            .title {
+                margin-top: 200px;
+            }
+        }
+
+
+        @media (min-width: 414px) {
             .timeOut-section {
                 gap: 200px;
             }
@@ -46,6 +53,14 @@ export function initTimeOutPage(params){
                 margin-top: 200px;
             }
         }
+
+        @media (min-width: 540px) {
+            .title {
+                margin-top: 100px;
+            }
+        }
+
+
 
         @media (min-width: 768px) {
             .timeOut-section {
