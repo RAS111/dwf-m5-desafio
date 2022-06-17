@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^17.0.33",
     "parcel": "^2.5.0"
   },
   "scripts": {
     "dev": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir build",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /dwf-m5-desafio",
+    "deploy": "gh-pages -d build",
+    "build-and-deploy": "npm run build && npm run deploy"
   },
   "dependencies": {
     "gh-pages": "^4.0.0"

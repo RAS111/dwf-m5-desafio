@@ -1,7 +1,11 @@
-import { initCustomText } from "./components/text";
-import { initCustomButton } from "./components/button";
+import "./components/textComponent";
+import "./components/buttonComponent";
+import "./components/handComponent";
+import "./components/timerComponent"
+import { initRouter } from "./router";
+
 
 (function() {
-    initCustomText();
-    initCustomButton();
+    const root = document.querySelector(".root");
+    initRouter(root);
 })();
